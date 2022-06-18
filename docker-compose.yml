@@ -10,6 +10,8 @@ services:
             options:
                 max-size: 10m
                 max-file: "3"
+        ports:
+            - "5432:5432"
     pgadmin:
         image: dpage/pgadmin4
         environment:
